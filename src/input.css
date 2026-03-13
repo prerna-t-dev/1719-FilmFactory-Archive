@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/* Import Catchye Font */
+@font-face {
+    font-family: 'catchye';
+    src: url('../dist/assets/fonts/Catchye_Demo/Catchye.woff') format('woff'),   /* Modern Browsers */
+         url('../dist/assets/fonts/Catchye_Demo/Catchye.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../dist/assets/fonts/Catchye_Demo/Catchye.svg#catchye') format('svg'), /* Legacy iOS */
+         url('../dist/assets/fonts/Catchye_Demo/Catchye.eot'); /* IE9 and below */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.font-poppins{
+    font-family: 'poppins', sans-serif;
+}
+
+.font-playfair{
+    font-family: 'Playfair Display', serif;
+}
+
+.font-catchye{
+    font-family: 'catchye', serif;
+}
+
+
+
+/* Custom CSS: 1719 */
+
+body{
+    background-color: #EAEAEA;
+}
+
+
+.bg-lightgrey{
+    background-color: #D9D9D9;
+}
+
+.usp__banner.marquee3k {
+    overflow: hidden;
+}
+
+.usp__banner.marquee3k > div {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.hero__banner{
+    background-image: url("./assets/images/1719 hero image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.1);
+    overflow: hidden;
+    animation: scale-down 1.9s forwards;
+}
+
+@keyframes scale-down {
+    0%{
+      transform: scale(1.1);
+    }
+  
+    100%{
+      transform: scale(1);
+    }
+}
